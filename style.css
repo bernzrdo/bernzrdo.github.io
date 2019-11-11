@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+* {
+    transition: background-color .5s;
+}
+
+/* --- DARK MODE --- */
+
+#mode {
+    position: fixed;
+    z-index: 999;
+    top: 25px;
+    right: 25px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark #skills > div {
+    border: 1px solid #fff;
+}
+
+.dark #skills > div > div {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark #contacts > div {
+    border: 1px solid #fff;
+}
+
+.dark #contacts > div:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark #contacts > div img, .dark #mode {
+    filter: invert(1);
+}
+
+.dark #email:hover #emailiconhover, .dark #github:hover img {
+    filter: invert(0);
+}
+
+/* ----------------- */
+
+#scroller {
+    height: 400vh;
+}
+
+#intro,#info,#skills,#contacts {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#pfp {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+#title {
+    display: block;
+    margin-top: 15px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+td {
+    font-size: 1.5em;
+}
+
+tr td:nth-child(1) {
+    font-weight: bold;
+    text-align: right;
+}
+
+#skills > div {
+    width: 400px;
+    height: 25px;
+    border: 1px solid #000;
+    margin: 25px;
+    text-align: left;
+}
+
+#skills > div > div {
+    background-color: #000;
+    color: #fff;
+    padding: 0 10px 2px 10px;
+}
+
+#contacts > div {
+    width: 300px;
+    border: 1px solid #000;
+    margin: 25px;
+    padding: 10px 0;
+    font-size: 1.2em;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+#contacts > div:hover {
+    transform: scale(1.1);
+    background-color: #000;
+    color: #fff;
+}
+
+#contacts > div img {
+    height: 20px;
+    transition: all .3s;
+    transform: translate(-4px, 3px);
+}
+
+#emailiconhover {
+    display: none;
+}
+
+#email:hover #emailiconhover {
+    display: inline;
+    filter: invert(1);
+}
+
+#email:hover #emailicon {
+    display: none;
+}
+
+#github:hover img {
+    filter: invert(1);
+}
+
