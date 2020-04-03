@@ -1,0 +1,12 @@
+<script>
+    var focus = true;
+    location.href = 'instagram://user?username=bernzrdo';
+    window.addEventListener('blur',function(){
+        focus = false;
+    });
+    setTimeout(function(){
+        if(focus){
+            location.href = 'https://instagram.com/bernzrdo';
+        }
+    },500);
+</script>
