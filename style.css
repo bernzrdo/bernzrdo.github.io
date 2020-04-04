@@ -142,3 +142,42 @@ body {
 #projects table:hover .time {
     opacity: .5;
 }
+
+/* ------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+
+    .social:hover {
+        transform: rotate(0) scale(1);
+    }
+
+    .social svg {
+        height: 30px;
+    }
+
+    #tiktok svg {
+        height: 27px;
+    }
+
+    #projects {
+        width: 100%;
+        background-color: #000;
+        z-index: 10000;
+    }
+
+    #projects table {
+        border-radius: 0;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #projects table:hover {
+        transform: scale(1);
+    }
+
+    .time {
+        opacity: .5;
+    }
+
+}
