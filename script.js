@@ -70,7 +70,12 @@ function error(msg){
 
 // --- MAIN ---
 $(function(){
-
+    
+    // - REDIRECT TO NOW.SH -
+    if(location.href.includes('bernzrdo.github.io')){
+        location.replace('https://bernzrdo.now.sh/');
+    }
+    
     // - PAGE COLOR -
     
     // Get random hue
