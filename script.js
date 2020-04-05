@@ -32,7 +32,7 @@ function start(){
         // Render projects on page
         repos.forEach(function(p){
             if(p.name!='bernzrdo.github.io'){
-                if(p.homepage==''){
+                if(p.homepage==null){
                     p.homepage = p.html_url;
                 }
                 $('#projects').append('<table url="'+p.homepage+'"><tr><td><img src="icons/'+p.name+'.png"></td><td><span class="title">'+p.name+'</span><span>'+p.description+'</span><span class="time">'+moment(p.created_at).fromNow()+'</span></td></table>');
@@ -141,7 +141,6 @@ $(function(){
         type: 'GET',
         success: function(d){ 
             repos = d;
-            console.log(d);
             start();
         },
         error: function(d) {
