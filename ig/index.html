@@ -1,7 +1,9 @@
 <script>
-    var username = 'bernzrdo';
+    var username;
     if(location.search != null){
-        username = location.search.substr(1)   
+        username = location.search.substr(1);
+    }else{
+        username = 'bernzrdo';
     }
     var focus = true;
     location.href = 'instagram://user?username='+username;
