@@ -3,6 +3,8 @@ var repos = [];
 var reposURL = {};
 $(()=>{
     
+    if(location.host=='bernzrdo.github.io') location.href = 'https://bernzrdo.now.sh'
+    
     // Variables
     const now = new Date();
     const year = now.getFullYear();
