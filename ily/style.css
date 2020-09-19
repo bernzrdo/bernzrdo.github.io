@@ -1,0 +1,24 @@
+
+body {
+    margin: 0;
+    font-family: system-ui;
+    background-color: #000;
+    transition: background-color .3s;
+    color: #fff;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: open .3s;
+}
+
+@keyframes open {
+    from {opacity: 0}
+    to   {opacity: 1}
+}
