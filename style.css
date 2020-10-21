@@ -1,10 +1,6 @@
 body {
     margin: 0;
-    transition: background-color .5s;
-}
-
-@media (prefers-color-scheme: dark) {
-    body {background-color: #000}
+    background-color: #000;
 }
 
 img {
