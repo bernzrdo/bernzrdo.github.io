@@ -1,0 +1,80 @@
+
+html {
+    background-color: #111;
+}
+
+body {
+    display: none;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+#reveal, #me, #nowplaying {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#reveal {
+    pointer-events: none;
+}
+
+#me, #me div {
+    width: 300px;
+    height: 300px;
+}
+
+#me {
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+#me.hover:hover {
+    transform: translate(-50%,-50%) rotate(5deg);
+}
+
+#me div {
+    background-image: url(me.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: blur(0);
+    transition: filter .3s;
+}
+
+#me.blur div {
+    filter: blur(25px);
+}
+
+#nowplaying {
+    display: none;
+    width: fit-content;
+    transform: translate(-50%,calc(-50% - 120px));
+    background-color: #000;
+    padding: 10px 25px 10px 50px;
+    border-radius: 5000px;
+    background-image: url(music.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: contain;
+    transition: transform 1s;
+}
+
+#nowplaying.show {
+    transform: translate(-50%,calc(-50% - 190px));
+}
+
+#nowplaying span:last-child {
+    opacity: .5;
+}
+
+#progress {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 5px;
+    background-color: #222;
+}
