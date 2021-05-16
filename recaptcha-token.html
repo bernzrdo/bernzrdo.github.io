@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <button class="g-recaptcha" data-sitekey="6Lcq1jYUAAAAAE5NT5kEcc0CJ3ayrjZj_-5b9Kb9" data-callback="recaptchaFormsAjax">Captcha</button>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script>
+            window.recaptchaFormsAjax = function(){
+                console.log(arguments);
+            }
+        </script>
+    </body>
+</html>
