@@ -1,80 +1,466 @@
 
-html {
-    background-color: #111;
-}
-
 body {
-    display: none;
     margin: 0;
-    font-family: 'Varela Round', sans-serif;
-    color: #fff;
-    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    background-color: #eee;
+    color: #444;
 }
 
-#reveal, #me, #nowplaying {
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {text-decoration: underline !important}
+
+.heading {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.paragraph {
+    display: block;
+    text-align: justify;
+}
+
+.seperator {
+    margin-right: 15px;
+    border-right: 1px solid #aaa;
+    padding-right: 15px;
+}
+
+@media screen and (max-width: 750px) {
+
+    .hi {
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .img {
+        position: static !important;
+        margin-bottom: 15px;
+        margin-top: -100px;
+    }
+
+    .intro {
+        margin-top: 15px;
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+    .info > div:not(:first-child) {
+        margin-top: 5px;
+    }
+
+    .info a, .info span {
+        word-break: break-all;
+    }
+
+    .seperator-parent {
+        flex-direction: column;
+    }
+
+    .seperator {
+        margin-right: 0 !important;
+        border-right: 0 !important;
+        padding-right: 0 !important;
+        margin-bottom: 25px;
+    }
+
+    .personal-projects > div {
+        flex-direction: column;
+    }
+
+    .big-card {
+        flex-basis: auto !important;
+    }
+
+    .big-card:not(:first-child) {
+        margin-left: 0 !important;
+        margin-top: 15px;
+    }
+
+}
+
+@media print {
+
+    .header, .buttons {
+        display: none !important;
+    }
+
+    .content {
+        border-radius: 10px !important;
+    }
+
+}
+
+/* ---------- ICONS ---------- */
+
+.icon.email           {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/new-post.png')}
+.icon.birthday        {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/easter-cake.png')}
+.icon.location        {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/marker.png')}
+.icon.github          {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/github.png')}
+.icon.linked-in       {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/linkedin.png')}
+
+.icon.html5           {background-image: url('img/html5.png')}
+.icon.css3            {background-image: url('img/css3.png')}
+.icon.javascript      {background-image: url('img/javascript.png')}
+.icon.node-js         {background-image: url('img/node-js.png')}
+.icon.cs              {background-image: url('img/cs.png')}
+.icon.php             {background-image: url('img/php.png')}
+
+.icon.esdpv           {background-image: url('img/esdpv.png')}
+.icon.controlink      {background-image: url('img/controlink.png')}
+
+.icon.unity           {background-image: url('https://img.icons8.com/ios-filled/100/0000000/unity.png')}
+.icon.bluetooth       {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/bluetooth.png')}
+
+.icon.attendance      {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/checked-user-male.png')}
+.icon.punctuality     {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/watches-front-view.png')}
+.icon.communication   {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/chat.png')}
+.icon.organization    {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/test-passed.png')}
+.icon.creativity      {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/idea.png')}
+.icon.problem-solving {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/puzzle.png')}
+.icon.adaptability    {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/make-decision.png')}
+.icon.empathy         {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/trust.png')}
+
+.icon.ux              {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/accessibility2.png')}
+.icon.video-games     {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/controller.png')}
+.icon.ui-design       {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/web-design.png')}
+.icon.music           {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/music.png')}
+
+/* ---------- HEADER ---------- */
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    background-image: url('https://source.unsplash.com/random?abstract');
+    background-size: cover;
+    background-position: center;
+}
+
+/* ---------- CONTENT ---------- */
+
+.content {
     position: absolute;
-    top: 50%;
+    top: 100px;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translateX(-50%);
+
+    width: calc(100% - 100px);
+    max-width: 700px;
+    padding: 25px;
+    
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 5px 15px rgba(0,0,0,.25);
 }
 
-#reveal {
-    pointer-events: none;
+.content > div {display: flex}
+
+.content > div:not(.buttons):not(.hi) {margin-top: 25px}
+
+/* ---------- BUTTONS ---------- */
+
+.buttons {
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
 
-#me, #me div {
-    width: 300px;
-    height: 300px;
-}
-
-#me {
-    overflow: hidden;
+.buttons div {
+    width: 1.2em;
+    height: 1.2em;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .25;
     cursor: pointer;
+    transition: opacity .3s;
+}
+.buttons div:hover {opacity: .75}
+
+.buttons .lang  {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/language.png')}
+.buttons .print {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/print.png')}
+
+/* ---------- HI ---------- */
+
+.hi {align-items: flex-end}
+
+.img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('img/me.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    border: 1px solid #ccc;
+}
+
+.intro {margin-left: 175px}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    color: #000;
+}
+
+.job {
+    font-size: 1.5em;
+    color: #888;
+}
+
+/* ---------- INFO ---------- */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info > div {
+    display: flex;
+    align-items: center;
+}
+
+.info .icon {
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.info a, .info span {
+    text-decoration: none;
+}
+
+/* ---------- PROGRAMMING SKILLS ---------- */
+
+.programming-skills {
+    flex-direction: column;
+}
+
+.programming-skills > div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.programming-skills > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.programming-skills > div span {
+    margin-top: 10px;
+}
+
+.programming-skills .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    border: 1px solid #ccc;
+}
+
+.flex-break {
+    display: none !important;
+}
+
+@media all and (min-width: 560px) and (max-width: 800px) {
+    
+    .flex-break {
+        display: block !important;
+        flex-basis: 100%;
+    }
+
+}
+
+/* ---------- EDUCATION & EXPERIENCE ---------- */
+
+.education-experience > div {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.card {
+    display: flex;
+}
+
+.card .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.25);
+    border: 1px solid #ccc;
+    flex-shrink: 0;
+    margin-right: 15px;
     transition: transform .3s;
 }
 
-#me.hover:hover {
-    transform: translate(-50%,-50%) rotate(5deg);
+.card a .icon:hover {
+    transform: scale(1.1);
 }
 
-#me div {
-    background-image: url(me.jpg);
-    background-position: center;
+.card span {
+    display: block;
+}
+
+.card .title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #000;
+}
+
+.card .footer {
+    font-size: .9em;
+    color: #888;
+}
+
+/* ---------- PERSONAL PROJECTS ---------- */
+
+.personal-projects {
+    flex-direction: column;
+}
+
+.personal-projects > div {
+    display: flex;
+}
+
+.big-card {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    border: 1px solid #ccc;
+    cursor: pointer;
+    overflow: hidden;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: transform .3s;
+}
+.big-card:hover {
+    transform: scale(1.05);
+    text-decoration: none !important;
+}
+
+.big-card:not(:first-child) {
+    margin-left: 15px;
+}
+
+.big-card .preview {
+    height: 100px;
     background-size: cover;
-    filter: blur(0);
-    transition: filter .3s;
+    background-position: center;
+    margin: -10px;
+    margin-bottom: 10px;
 }
 
-#me.blur div {
-    filter: blur(25px);
+.preview.splash-ink      {background-image: url('https://repository-images.githubusercontent.com/375286018/53b2c900-c929-11eb-9a53-0adf7832d4a6')}
+.preview.guess-who       {background-image: url('https://repository-images.githubusercontent.com/234987614/fb400272-c646-4585-a54f-10973bdb21af')}
+.preview.among-us-joycon {background-image: url('https://repository-images.githubusercontent.com/320694206/bcda8779-9e02-4783-9f98-2e6d27867241')}
+
+.big-card span {
+    display: block;
 }
 
-#nowplaying {
-    display: none;
-    width: fit-content;
-    transform: translate(-50%,calc(-50% - 120px));
-    background-color: #000;
-    padding: 10px 25px 10px 50px;
-    border-radius: 5000px;
-    background-image: url(music.png);
-    background-repeat: no-repeat;
-    background-position: 10px center;
+.big-card .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+}
+.big-card .title:hover {
+    text-decoration: underline;
+}
+
+.big-card .paragraph {
+    font-size: .8em;
+}
+
+.big-card .pills {
+    justify-content: normal;
+}
+
+.big-card .pills > div {
+    padding: 5px 10px;
+    font-size: .8em;
+    flex: 0;
+}
+
+.github-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #eee;
+    color: #000;
+    border-radius: 9999px;
+    padding: 5px 25px;
+    margin: 0 auto;
+    margin-top: 25px;
+    transition: transform .3s;
+}
+.github-button:hover {
+    text-decoration: none !important;
+    transform: scale(1.1);
+}
+
+.github-button .icon {
+    width: 1.5em;
+    height: 1.5em;
     background-size: contain;
-    transition: transform 1s;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 5px;
 }
 
-#nowplaying.show {
-    transform: translate(-50%,calc(-50% - 190px));
+
+/* ---------- SOFT SKILLS & INTERESTS ---------- */
+
+.soft-skills, .interests {
+    flex-direction: column;
 }
 
-#nowplaying span:last-child {
-    opacity: .5;
+.pills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-#progress {
-    position: absolute;
-    top: 0;
-    width: 0;
-    height: 5px;
-    background-color: #222;
+.pills > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 9999px;
+    margin: 5px;
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.pills .icon {
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 5px;
 }
