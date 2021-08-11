@@ -25,11 +25,13 @@ a:hover {text-decoration: underline !important}
     text-align: justify;
 }
 
-.seperator {
+.separator {
     margin-right: 15px;
     border-right: 1px solid #aaa;
     padding-right: 15px;
 }
+
+/* ---------- SMALLER DEVICES ---------- */
 
 @media screen and (max-width: 750px) {
 
@@ -58,11 +60,11 @@ a:hover {text-decoration: underline !important}
         word-break: break-all;
     }
 
-    .seperator-parent {
+    .separator-parent {
         flex-direction: column;
     }
 
-    .seperator {
+    .separator {
         margin-right: 0 !important;
         border-right: 0 !important;
         padding-right: 0 !important;
@@ -84,15 +86,74 @@ a:hover {text-decoration: underline !important}
 
 }
 
+/* ---------- PRINT ---------- */
+
 @media print {
 
-    .header, .buttons {
+    .buttons {
         display: none !important;
     }
 
     .content {
         border-radius: 10px !important;
     }
+
+    .print-warning {
+        display: block !important;
+    }
+
+}
+
+/* ---------- DARK MODE ---------- */
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #111;
+        color: #ccc;
+    }
+
+    .print-warning, .content, .big-card {
+        background-color: #222 !important;
+    }
+
+    .github-button, .pills > div {
+        background-color: #333 !important;
+    }
+    
+    .separator, .print-warning, .content, .img, .programming-skills .icon, .card .icon, .big-card {
+        border-color: #333 !important;
+    }
+
+    .heading, .name, .card .title, .big-card .title, .github-button, .pills > div {
+        color: #fff !important;
+    }
+
+    .icon.email           {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/new-post.png') !important}
+    .icon.birthday        {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/easter-cake.png') !important}
+    .icon.location        {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/marker.png') !important}
+    .icon.github          {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/github.png') !important}
+    .icon.linked-in       {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/linkedin.png') !important}
+
+    .icon.unity           {background-image: url('https://img.icons8.com/ios-filled/100/ffffff/unity.png') !important}
+    .icon.bluetooth       {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/bluetooth.png') !important}
+
+    .icon.attendance      {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/checked-user-male.png') !important}
+    .icon.punctuality     {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/watches-front-view.png') !important}
+    .icon.communication   {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/chat.png') !important}
+    .icon.organization    {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/test-passed.png') !important}
+    .icon.creativity      {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/idea.png') !important}
+    .icon.problem-solving {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/puzzle.png') !important}
+    .icon.adaptability    {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/make-decision.png') !important}
+    .icon.empathy         {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/trust.png') !important}
+
+    .icon.ux              {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/accessibility2.png') !important}
+    .icon.video-games     {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/controller.png') !important}
+    .icon.ui-design       {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/web-design.png') !important}
+    .icon.music           {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/music.png') !important}
+
+    .buttons .lang  {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/language.png') !important}
+    .buttons .print {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/print.png') !important}
 
 }
 
@@ -114,22 +175,22 @@ a:hover {text-decoration: underline !important}
 .icon.esdpv           {background-image: url('img/esdpv.png')}
 .icon.controlink      {background-image: url('img/controlink.png')}
 
-.icon.unity           {background-image: url('https://img.icons8.com/ios-filled/100/0000000/unity.png')}
-.icon.bluetooth       {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/bluetooth.png')}
+.icon.unity           {background-image: url('https://img.icons8.com/ios-filled/100/000000/unity.png')}
+.icon.bluetooth       {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/bluetooth.png')}
 
-.icon.attendance      {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/checked-user-male.png')}
-.icon.punctuality     {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/watches-front-view.png')}
-.icon.communication   {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/chat.png')}
-.icon.organization    {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/test-passed.png')}
-.icon.creativity      {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/idea.png')}
-.icon.problem-solving {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/puzzle.png')}
-.icon.adaptability    {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/make-decision.png')}
-.icon.empathy         {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/trust.png')}
+.icon.attendance      {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/checked-user-male.png')}
+.icon.punctuality     {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/watches-front-view.png')}
+.icon.communication   {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/chat.png')}
+.icon.organization    {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/test-passed.png')}
+.icon.creativity      {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/idea.png')}
+.icon.problem-solving {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/puzzle.png')}
+.icon.adaptability    {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/make-decision.png')}
+.icon.empathy         {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/trust.png')}
 
-.icon.ux              {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/accessibility2.png')}
-.icon.video-games     {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/controller.png')}
-.icon.ui-design       {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/web-design.png')}
-.icon.music           {background-image: url('https://img.icons8.com/ios-glyphs/100/0000000/music.png')}
+.icon.ux              {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/accessibility2.png')}
+.icon.video-games     {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/controller.png')}
+.icon.ui-design       {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/web-design.png')}
+.icon.music           {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/music.png')}
 
 /* ---------- HEADER ---------- */
 
@@ -140,6 +201,22 @@ a:hover {text-decoration: underline !important}
     background-image: url('https://source.unsplash.com/random?abstract');
     background-size: cover;
     background-position: center;
+}
+
+/* ---------- PRINT WARNING ---------- */
+
+.print-warning {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 5px 25px;
+    border-radius: 9999px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 5px 15px rgba(0,0,0,.25);
+    font-size: .8em;
 }
 
 /* ---------- CONTENT ---------- */
