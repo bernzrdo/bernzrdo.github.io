@@ -130,6 +130,7 @@ a:hover {text-decoration: underline !important}
     }
 
     .icon.email           {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/new-post.png') !important}
+    .icon.phone           {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/phone.png') !important}
     .icon.birthday        {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/easter-cake.png') !important}
     .icon.location        {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/marker.png') !important}
     .icon.github          {background-image: url('https://img.icons8.com/ios-glyphs/100/ffffff/github.png') !important}
@@ -160,6 +161,7 @@ a:hover {text-decoration: underline !important}
 /* ---------- ICONS ---------- */
 
 .icon.email           {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/new-post.png')}
+.icon.phone           {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/phone.png')}
 .icon.birthday        {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/easter-cake.png')}
 .icon.location        {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/marker.png')}
 .icon.github          {background-image: url('https://img.icons8.com/ios-glyphs/100/000000/github.png')}
