@@ -1,0 +1,134 @@
+
+html, body { height: 100% }
+
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+    perspective: 5000px;
+
+    background-color: #000;
+    background-image: radial-gradient(#fff5 1px, #0000 0);
+    background-size: 50px 50px;
+    background-position: 0 0;
+    animation: bg 2s infinite linear;
+}
+
+@keyframes bg {
+    0%   {background-position: 0 0}
+    100% {background-position: -50px -50px}
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    text-align: center;
+    max-width: calc(100% - 100px);
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-family: 'UnifrakturMaguntia', serif;
+    font-size: 4.5em;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+}
+
+.tags > div {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-grow: 1;
+    
+    text-align: center;
+    background-color: #fff1;
+    border: 1px solid #fff3;
+    padding: 2px 15px;
+    border-radius: 5000px;
+}
+
+.tags i {
+    font-size: .8em;
+}
+
+.motto {
+    font-size: 1.2em;
+    color: #fffc;
+}
+
+a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+a::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    height: .1em;
+    width: 0;
+    background-color: #fff;
+
+    transition: width .3s;
+}
+a:hover::after {
+    width: 100%;
+}
+
+.left-link, .right-link {
+    position: absolute;
+    top: 50%;
+}
+
+.left-link {
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.right-link {
+    right: 0;
+    transform: rotate(90deg);
+}
+.right-link::after {
+    right: 0;
+    left: unset;
+}
+
+.small-screen-links {
+    display: none;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+
+    .left-link, .right-link { display: none }
+    .small-screen-links { display: flex }
+
+}
