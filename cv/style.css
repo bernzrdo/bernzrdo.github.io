@@ -39,7 +39,7 @@ p {
     text-align: justify;
     hyphens: auto;
     -webkit-hyphens: auto;
-    text-indent: 10px;
+    text-indent: 2em;
 }
 
 /* Header */
