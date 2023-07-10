@@ -1,6 +1,6 @@
 
 :root {
-    /* color-scheme: light dark; */
+    color-scheme: light dark;
     scroll-behavior: smooth;
 }
 
@@ -250,7 +250,7 @@ section > ul li img { height: 1em }
 
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 
     body, section h2, .card, section > ul li {
         background-color: #111;
@@ -264,4 +264,4 @@ section > ul li img { height: 1em }
 
     .dark-invert { filter: invert(1) }
 
-} */
+}
