@@ -24,5 +24,5 @@ mix.disableSuccessNotifications();
 for(let scss of getFiles('resources/scss'))
     mix.sass(scss, scss.replace('resources/scss/', 'docs/css/').replace('.scss', '.css'));
 
-for(let js of getFiles('resources/js'))
-    mix.js(js, js.replace('resources/js/', 'docs/js/'));
+for(let ts of getFiles('resources/ts'))
+    mix.ts(ts, ts.replace('resources/ts/', 'docs/js/').replace('.ts', '.js'));

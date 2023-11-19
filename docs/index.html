@@ -5,334 +5,66 @@
         <title>Bernardo Silva</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <!-- Primary Meta Tags -->
-        <meta name="title" content="Bernardo Silva">
-        <meta name="description" content="Web Developer">
+        <!-- Metatags -->
         
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://bernzrdo.wtf/">
-        <meta property="og:title" content="Bernardo Silva">
-        <meta property="og:description" content="Web Developer">
-        
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary">
-        <meta property="twitter:url" content="https://bernzrdo.wtf/">
-        <meta property="twitter:title" content="Bernardo Silva">
-        <meta property="twitter:description" content="Web Developer">
-
         <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-        
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
+        <video class="vertical" src="/img/vertical.mp4" playsinline autoplay muted loop></video>
+        <video class="horizontal" src="/img/horizontal.mp4" playsinline autoplay muted loop></video>
+        <div class="fade"></div>
+        <main>
 
-        <div class="index">
-            <a href="#intro">intro</a>
-            <a href="#timeline">timeline</a>
-            <a href="#skills">skills</a>
-            <a href="#soft-skills">soft skills</a>
-            <a href="#contact">contact</a>
-        </div>
-        
-        <div id="intro">
-
-            <canvas class="hyperdrive"></canvas>
-            
-            <div class="language">
-                <div class="select">
-                    English
-                    <i class="fa-solid fa-chevron-down"></i>
+            <div class="profile">
+                <div class="avatar">
+                    <div class="placeholder"></div>
+                    <img class="loading" src="https://www.gravatar.com/avatar/b57e425a928d1068f8cb882079fea5f814bb314534e43717cf6b896865de39ba?s=1024">
                 </div>
-                <div class="options">
-                    <a href="/" class="selected">English</a>
-                    <a href="/pt">Português</a>
-                </div>
-            </div>
-            
-            <div class="greeting">
-                <span>Hi, I'm</span>
-                <h1>bernardo silva</h1>
-                <span>and I'm a web developer</span>
+                <div class="name">Bernardo Silva</div>
+                <div class="username">@bernzrdo</div>
             </div>
 
-            <div class="hint" data-text="Scroll down to know more">Scroll down to know more</div>
-
-        </div>
-
-        <div id="timeline">
-
-            <div class="event">
-                <div class="date">Aug 23, 2003</div>
-                <div class="title">I was born!</div>
-                <div class="content"><span class="age">19</span> years ago.</div>
-            </div>
-
-            <div class="note">I always loved to use my creativity. Starting with drawings and later with interactive PowerPoints on my first computer.</div>
-
-            <div class="event">
-                <div class="date">2014 &middot; 10 years old</div>
-                <div class="title">Command Prompt</div>
-                <div class="content">I was introduced to the command prompt and decided to download a <a href="https://www.youtube.com/watch?v=RblizDDxaBA" target="_blank">batch snake game</a>, read its source code and learn from it on how to make my own scripts.</div>
-            </div>
-
-            <div class="note">I had so many ideas for websites I wanted to make but I didn't know where to start.</div>
-
-            <div class="event">
-                <div class="date">May 7, 2017 &middot; 13 years old</div>
-                <div class="title"><a href="https://neocities.org/" target="_blank">neocities.org</a></div>
-                <div class="content">With the help of this website, I dived into the world of web development.</div>
-            </div>
-
-            <div class="note">Even when limited to static websites, that didn't limit my imagination. I was always creating new websites and expanding my knowlegde.</div>
-
-            <div class="event">
-                <div class="date">Sep 2018 &middot; 15 years old</div>
-                <div class="title">IT Professional Course</div>
-                <div class="content">On my first programming lesson, I was starstruck by it, thinking "this is exactly what I want to do."</div>
-            </div>
-
-            <div class="note">During my 3-year-long course, I excelled in the programming class and appeared on the honors board multiple times. Even in my spare time, I kept making personal projects all the time.</div>
-
-            <div class="event">
-                <div class="date">April 2021</div>
-                <div class="title">Internship @ Controlink</div>
-                <div class="content">Offered by my course, this internship taught me how is it like to be a web developer. My skills were recognized and appreciated in my workplace.</div>
-            </div>
-
-            <div class="note">On the final year of my course, I was tasked with making the final project. I've challenged myself to make a Unity game with C# even without any experience.</div>
-
-            <div class="event">
-                <div class="date">July 2021</div>
-                <div class="title">End of My Course</div>
-                <div class="content">On a scale from 0 to 20, I got 19 on my internship, 18 on programming class, 19 on my final project and an overall grade of 17.</div>
-            </div>
-
-            <div class="note">With my enjoyment on the internship, I decided to venture into the job market.</div>
-
-            <div class="event">
-                <div class="date">October 2021 - February 2023</div>
-                <div class="title">Job @ Controlink</div>
-                <div class="content">Started as a freelancer and later promoted to a full-time employee. During my time there, I learned how to communicate with clients, help coworkers, lead projects and learn new programming languages.</div>
-            </div>
-
-            <div class="note">I've decided to take a break to focus on my personal project.</div>
-
-            <div class="event">
-                <div class="date">February 2023 - Present</div>
-                <div class="title">LX Now</div>
-                <div class="content">Motivated by the struggle of finding quality events in Lisbon, I challenged myself to create a platform of curated events by myself.</div>
-            </div>
-
-            <div class="note">And now I'm excited to find out what life has in store for me.</div>
-
-        </div>
-
-        <div id="skills"></div>
-
-        <dialog class="skill skill-javascript off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/javascript.png">
-                JavaScript
-            </h1>
-            <p>JavaScript was the first programming language I learned, and it remains my favorite to this day due to its incredible versatility and the vast range of projects I've been able to create with it. Through a combination of professional and personal projects, I have gained a profound understanding of the language, enabling me to utilize it extensively and seamlessly explore new libraries and frameworks.</p>
-        </dialog>
-
-        <dialog class="skill skill-nodejs off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/nodejs.png">
-                Node.js
-            </h1>
-            <p>Building on my existing knowledge of JavaScript, I eagerly embraced the challenge of learning Node.js while searching for a Discord bot that met my specific requirements. It was a captivating journey, and I swiftly developed a deep affection for Node.js, employing it in diverse projects to create powerful and efficient solutions.</p>
-        </dialog>
-
-        <dialog class="skill skill-css off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/css.png">
-                CSS
-            </h1>
-            <p>Prior to delving into JavaScript, I was limited to crafting websites using HTML and CSS. This constraint motivated me to thoroughly explore and master the intricacies of CSS. Even as I now possess JavaScript proficiency, I find myself continually drawn to CSS-only techniques to enhance website performance and create seamless user experiences.</p>
-        </dialog>
-
-        <dialog class="skill skill-html off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/html.png">
-                HTML
-            </h1>
-            <p>My journey into the world of HTML commenced with Neocities' tutorial, laying a strong foundation for my learning. With the help of the internet, I gained familiarity with a myriad of HTML elements. My commitment to writing semantic and accessible HTML has been a guiding principle, ensuring my web creations are not only visually appealing but also inclusive and user-friendly.</p>
-        </dialog>
-
-        <dialog class="skill skill-laravel off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/laravel.png">
-                Laravel
-            </h1>
-            <p>My initial introduction to Laravel took place during my professional course, and it turned into my preferred PHP web framework as I applied it extensively during my time at Controlink. Working in a professional environment provided me with the opportunity to immerse myself in Laravel's diverse features, enabling me to seamlessly incorporate them into my projects and continually enhance the quality and efficiency of my code.</p>
-        </dialog>
-
-        <dialog class="skill skill-php off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/php.png">
-                PHP
-            </h1>
-            <p>I learned PHP during my professional course, and later harnessed its full potential in a work enviroment with Laravel. Despite the diverse opinions surrounding PHP, I embraced its unique intricacies and quirks, and ultimately developed a fondness for the language. My passion for PHP drives me to craft efficient and innovative solutions, continuously exploring its capabilities to deliver exceptional results.</p>
-        </dialog>
-
-        <dialog class="skill skill-mysql off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/mysql.png">
-                MySQL
-            </h1>
-            <p>As a complementary component to my PHP projects, I utilized MySQL as the database of choice. During my time at Controlink, I honed my skills in crafting optimized MySQL queries to enhance both website and personal performance. By refining my approach to database interactions, I significantly improved the efficiency and responsiveness of the projects, ensuring seamless user experiences and streamlined data management.</p>
-        </dialog>
-
-        <dialog class="skill skill-jquery off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/jquery.png">
-                jQuery
-            </h1>
-            <p>My journey into JavaScript programming began with the invaluable assistance of jQuery. Over time, I have come to rely on jQuery as a powerful tool that expedites project development, enabling me to create efficient solutions swiftly. I've delved deep into its myriad of features, skillfully implementing them to enhance the functionality and interactivity of my projects. jQuery remains an integral part of my toolkit, contributing to my ability to deliver dynamic and polished web experiences efficiently.</p>
-        </dialog>
-
-        <dialog class="skill skill-figma off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/figma.png">
-                Figma
-            </h1>
-            <p>My journey with Figma began when I realized that designing projects on paper was limited, and I needed a more versatile solution. Embracing Figma, I swiftly honed my skills in crafting visually stunning and dynamic UI designs. The platform empowered me to experiment freely, continually refining and iterating on my designs to achieve optimal results. Figma has become an indispensable tool in my design process, enabling me to create captivating user experiences and breathe life into my ideas with ease.</p>
-        </dialog>
-
-        <dialog class="skill skill-notion off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/notion.png">
-                Notion
-            </h1>
-            <p>Embracing Notion for organizing my notes proved to be a transformative decision, significantly enhancing my overall efficiency and productivity. By migrating my notes to this versatile platform, I gained the ability to swiftly organize my ideas and information with ease. Notion's intuitive interface allowed me to streamline my workflows and access essential information quickly, leading to improved performance and empowering me to tackle tasks with greater clarity and focus.</p>
-        </dialog>
-
-        <dialog class="skill skill-socket-io off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/socket-io.png">
-                Socket.IO
-            </h1>
-            <p>During the course of my personal projects, I recognized the importance of establishing real-time communication with the server. Discovering Socket.io, I promptly grasped its capabilities and became proficient in its usage. As my projects grew in complexity, I delved deeper into the underlying technology—WebSockets—to augment the capabilities of my projects. For the final project of my professional course, I combined WebSockets, Node.js, and C# to construct a multiplayer game infrastructure from the ground up, showcasing my prowess in crafting sophisticated and interactive applications.</p>
-        </dialog>
-
-        <dialog class="skill skill-unity off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/unity.png">
-                Unity
-            </h1>
-            <p>As the culmination of my professional course, I undertook the ambitious endeavor of creating a 3D multiplayer game using Unity. With dedicated effort and quick adaptability, I successfully accomplished this challenging task within a remarkable timespan of just 9 months. The resulting Unity project stands as a testament to my determination and skill, instilling a sense of pride in the achievement. While my journey in game development may have concluded, the experience bolstered my abilities and showcased my capacity to excel in demanding and creative undertakings.</p>
-        </dialog>
-
-        <dialog class="skill skill-c-sharp off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/c-sharp.png">
-                C#
-            </h1>
-            <p>My introduction to C# <i>(C Sharp)</i> occurred during my professional course, where I acquired the skills to craft Windows applications and develop Unity games. My affinity for C# grew as I delved deeper into its intricacies, notably during the final project of my course, where I leveraged C# to construct a compelling multiplayer game using WebSockets. This enriching experience solidified my expertise in C#, and I now possess a versatile set of abilities that enable me to create engaging applications and games.</p>
-        </dialog>
-
-        <dialog class="skill skill-flutter off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/flutter.png">
-                Flutter
-            </h1>
-            <p>During my time at Controlink, I had the opportunity to delve into Flutter development, a task assigned to me by the company. Despite being offered dedicated learning time, I opted for a hands-on approach, which turned out to be a resounding success. Leveraging my adaptability and tenacity, I rapidly acquired proficiency in Flutter within a matter of weeks. This experience showcased my ability to learn and excel in new technologies swiftly, demonstrating my readiness to take on challenges and contribute effectively to the organization's objectives.</p>
-        </dialog>
-
-        <dialog class="skill skill-postgresql off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/postgresql.png">
-                PostgreSQL
-            </h1>
-            <p>When I discovered Heroku's free tier, I recognized that PostgreSQL was the available database option for my projects. Embracing the opportunity, I promptly delved into PostgreSQL, determined to learn its functionalities. My ability to adapt and learn quickly allowed me to effectively work with PostgreSQL, leveraging its capabilities to manage and optimize the data for my projects hosted on Heroku. This experience further enriched my expertise in database management, positioning me to efficiently handle diverse data requirements and deliver seamless, scalable solutions for my projects.</p>
-        </dialog>
-
-        <dialog class="skill skill-java off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/java.png">
-                Java
-            </h1>
-            <p>My initiation into Java commenced during my professional course, where I acquired a strong foundation in the language. Building on this knowledge, I set myself a thrilling challenge of creating a Minecraft mod. This project not only showcased my determination and problem-solving abilities but also solidified my expertise in Java programming.</p>
-        </dialog>
-
-        <dialog class="skill skill-c off" style="display: none;">
-            <i class="close-btn fa-solid fa-xmark"></i>
-            <h1>
-                <img src="/img/c.png">
-                C
-            </h1>
-            <p>During my professional course, I gained familiarity with C, exploring its fundamental concepts and obtaining a working knowledge of its basics. As I continue to grow in my programming journey, I remain open to further expanding my expertise in C and other languages, continuously seeking opportunities for learning and improvement.</p>
-        </dialog>
-
-        <div id="soft-skills">
-            <div class="soft-skill">
-                <div class="title">Passion</div>
-                <div class="content">I'm deeply enthusiastic about programming and software development, driving me to explore new possibilities and continuously improve.</div>
-            </div>
-            <div class="soft-skill">
-                <div class="title">Organization</div>
-                <div class="content">Committed to maintaining a well-organized workspace, including code, to enhance productivity and support colleagues.</div>
-            </div>
-            <div class="soft-skill">
-                <div class="title">Adaptability</div>
-                <div class="content">I excel in adapting to new technologies and embracing challenges as valuable learning opportunities.</div>
-            </div>
-            <div class="soft-skill">
-                <div class="title">Quality-oriented</div>
-                <div class="content">I take pride in crafting software with excellent design, user-friendliness, and reliability, consistently meeting high standards.</div>
-            </div>
-        </div>
-
-        <div id="contact">
-            <div class="frame">
-            </div>
-            <div class="links">
-                <a href="mailto:bernardovs2003@gmail.com" target="_blank">
-                    <i class="fa-solid fa-envelope"></i>
-                    E-mail
+            <div class="apps">
+                <a href="https://www.instagram.com/bernzrdo/" target="_blank">
+                    <div class="icon" style="background-image: url('/img/apps/instagram.webp');"></div>
+                    <div class="name">Instagram</div>
+                </a>
+                <a href="https://twitter.com/espamamapixa" target="_blank">
+                    <div class="icon" style="background-image: url('/img/apps/twitter.webp');"></div>
+                    <div class="name">Twitter</div>
+                </a>
+                <a href="https://www.tiktok.com/@quilometro" target="_blank">
+                    <div class="icon" style="background-image: url('/img/apps/tiktok.webp');"></div>
+                    <div class="name">TikTok</div>
+                </a>
+                <a href="https://genius.com/bernzrdo" target="_blank">
+                    <div class="icon" style="background-image: url('/img/apps/genius.webp');"></div>
+                    <div class="name">Genius</div>
+                </a>
+                <a href="https://letterboxd.com/bernzrdo/" target="_blank">
+                    <div class="icon" style="background-image: url('/img/apps/letterboxd.webp');"></div>
+                    <div class="name">Letterboxd</div>
+                </a>
+                <a href="https://www.last.fm/user/pitacorada" target="_blank">
+                    <div class="icon" style="background-image: url('/img/apps/lastfm.webp');"></div>
+                    <div class="name">Last.fm</div>
                 </a>
                 <a href="https://github.com/bernzrdo" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                    GitHub
+                    <div class="icon" style="background-image: url('/img/apps/github.webp');"></div>
+                    <div class="name">GitHub</div>
                 </a>
-                <a href="https://www.linkedin.com/in/bernzrdo/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                    LinkedIn
+                <a href="mailto:bernardovs2003@gmail.com" target="_blank">
+                    <div class="icon" style="background-image: url('/img/apps/gmail.webp');"></div>
+                    <div class="name">Gmail</div>
                 </a>
             </div>
-        </div>
 
-        <footer>
-            <a href="https://github.com/bernzrdo/bernzrdo.github.io" target="_blank">Source Code</a>
-        </footer>
-
+        </main>
         <script src="/js/script.js"></script>
-        <script src="/js/hyperdrive.js"></script>
-        <script src="/js/skills.js"></script>
     </body>
 </html>
