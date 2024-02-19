@@ -120,14 +120,14 @@ main {
     .name {
         font-size: 3em;
         transition: font-size .3s;
-        // @media (max-width: 500px) { font-size: 2em }
+        @media (max-width: 500px) { font-size: 2em }
         font-weight: bold;
     }
 
     .username {
         font-size: 1.5em;
         transition: font-size .3s;
-        // @media (max-width: 500px) { font-size: 1em }
+        @media (max-width: 500px) { font-size: 1em }
         color: rgba($color: #fff, $alpha: .5);
     }
     

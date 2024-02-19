@@ -1,5 +1,9 @@
 
 const $img: HTMLImageElement = document.querySelector('.profile .avatar img')!;
 
-if($img.complete) $img.classList.remove('loading');
-else $img.addEventListener('load', ()=>$img.classList.remove('loading'), { once: true });
+function loaded(){
+    $img.classList.remove('loading');
+}
+
+if($img.complete) loaded()
+else $img.addEventListener('load', loaded, { once: true });
