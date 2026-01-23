@@ -1,0 +1,17 @@
+:root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+  }
+}
